@@ -6,9 +6,9 @@ public class Store {
 		
 		IStockObservable observable=new  IPhoneObserverIml();
 		
-		INotificationAlertObserver observer1=new EmailAlertObserverImpl("divs@gmail.com");
-		INotificationAlertObserver observer2=new EmailAlertObserverImpl("mouli@gmail.com");
-		INotificationAlertObserver observer3=new MobileAlertObserverImpl("Dheeran");
+		INotificationAlertObserver observer1=new EmailAlertObserverImpl("divs@gmail.com",observable);
+		INotificationAlertObserver observer2=new EmailAlertObserverImpl("mouli@gmail.com",observable);
+		INotificationAlertObserver observer3=new MobileAlertObserverImpl("Dheeran",observable);
 		
 		observable.add(observer1);
 		observable.add(observer2);

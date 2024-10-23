@@ -6,7 +6,7 @@ import java.util.List;
 public class IPhoneObserverIml implements IStockObservable {
 
 	public List<INotificationAlertObserver> obList = new ArrayList();
-	public int stockCount=0;
+	public static int stockCount=0;
 
 	@Override
 	public void add(INotificationAlertObserver observer) {

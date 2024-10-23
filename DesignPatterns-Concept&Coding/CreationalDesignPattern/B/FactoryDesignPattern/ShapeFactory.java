@@ -2,7 +2,7 @@ package B.FactoryDesignPattern;
 
 public class ShapeFactory {
 	
-	IShape shape;
+//	IShape shape;
 	public IShape getShape(String shapeType) {
 		if(shapeType.equalsIgnoreCase("CIRCLE")) {
 			return new Circle();
